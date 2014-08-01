@@ -1,13 +1,19 @@
 class Quote
-	
+
 	INCREASE = {'bike' => 0,
 				  'motorbike' => 0.2,
 				  'car' => 0.3,
 				  'van' => 0.4}
+
 	MAX_DISTANCE = {'bike' => 10,
 					  'motorbike' => 100,
 					  'car' => 200,
 					  'van' => 500}
+
+	# MAX_CAPACITY = {'bike' => 100,
+	# 				  'motorbike' => 500,
+	# 				  'car' => 1000,
+	# 				  'van' => 2000}
 
 	def initialize(vehicle)
 		@vehicle=vehicle
@@ -55,7 +61,7 @@ class Quote
 		distance = calculate_distance
 		MAX_DISTANCE.each { |key,value|
 			return key if distance < value
-		}		
+		}
 	end
 
 end

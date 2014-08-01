@@ -18,4 +18,5 @@ group :development do
   gem 'guard-rspec'
   gem 'pry'
   gem 'shotgun'
+  gem 'jbuilder', '~> 2.0'
 end

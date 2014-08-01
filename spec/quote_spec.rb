@@ -33,7 +33,7 @@ describe "Quote" do
   		quote.to = [1,1]
   		expect(quote.price).to eq(0)
   	end
-  	
+
   	it "if two points are not the same, price should be equal" do
   		quote = Quote.new("bike")
   		quote.from = [0,0]
@@ -89,4 +89,6 @@ describe "Quote" do
       quote.to = [12,24]
       expect(quote.price).to eq(37.57)
     end
+
+    it 
 end
